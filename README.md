@@ -1,13 +1,14 @@
-# Kalle Raatgever — Portfolio
+# Kalle Raatgever - Portfolio
 
 Personal portfolio website, built with plain HTML, CSS, and JavaScript, hosted on GitHub Pages.
 
 ## Structure
 
-- `index.html` — page markup
-- `assets/css/style.css` — styles
-- `assets/js/script.js` — nav toggle & small interactions
-- `assets/cv/Kalle-Raatgever-CV.pdf` — downloadable CV
+- `index.html`: page markup
+- `assets/css/style.css`: styles
+- `assets/js/script.js`: nav toggle & small interactions
+- `assets/cv/Kalle-Raatgever-CV.pdf`: downloadable CV
+- `assets/img/profile.jpg`: profile photo
 
 ## Development
 
@@ -19,9 +20,9 @@ python3 -m http.server
 
 ## Branches
 
-- `main` — production, deployed via GitHub Pages
-- `develop` — active development; merge into `main` to publish
+- `main`: production, deployed via GitHub Pages
+- `develop`: active development, merge into `main` to publish
 
 ## Deployment
 
-GitHub Pages is served from the `main` branch root (Settings → Pages → Source: `main` / `/`).
+GitHub Pages is served from the `main` branch root (Settings > Pages > Source: `main` / `/`).

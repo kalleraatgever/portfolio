@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kalle Raatgever — Software Engineer</title>
+  <title>Kalle Raatgever - Software Engineer</title>
   <meta name="description" content="Portfolio of Kalle Raatgever, software engineer specializing in full-stack development, data engineering, and Agile delivery." />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230f1c3f%22/><text x=%2250%22 y=%2268%22 font-size=%2255%22 font-family=%22sans-serif%22 font-weight=%22700%22 fill=%22%23e0703a%22 text-anchor=%22middle%22>KR</text></svg>" />
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -19,6 +19,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -28,17 +29,26 @@
   <main>
     <section id="home" class="hero">
       <div class="container hero-inner">
-        <p class="eyebrow">Hi, I'm</p>
-        <h1>Kalle Raatgever</h1>
-        <p class="role">Software Engineer</p>
-        <p class="hero-summary">
-          Software engineer with a strong track record in full-stack development, data engineering,
-          and Agile delivery. Known for writing clean, maintainable code and actively mentoring
-          junior colleagues to help teams grow.
-        </p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Get in touch</a>
-          <a href="assets/cv/Kalle-Raatgever-CV.pdf" class="btn btn-outline" download>Download CV</a>
+        <div class="hero-text">
+          <p class="eyebrow">Hi, I'm</p>
+          <h1>Kalle Raatgever</h1>
+          <p class="role">Software Engineer</p>
+          <p class="hero-summary">
+            Software engineer with a strong track record in full-stack development, data engineering,
+            and Agile delivery. Known for writing clean, maintainable code and actively mentoring
+            junior colleagues to help teams grow.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Get in touch</a>
+            <a href="assets/cv/Kalle-Raatgever-CV.pdf" class="btn btn-outline" download>Download CV</a>
+          </div>
+          <div class="easter-egg">
+            <button type="button" class="btn btn-easter" id="easterBtn">Don't click this button</button>
+            <p class="easter-message" id="easterMessage" aria-live="polite"></p>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="assets/img/profile.jpg" alt="Portrait of Kalle Raatgever" width="600" height="900" />
         </div>
       </div>
     </section>
@@ -49,8 +59,8 @@
         <div class="about-grid">
           <p class="about-text">
             I thrive in collaborative, fast-moving environments where ownership and quality both
-            matter — currently looking to grow into a role with more technical leadership and
-            broader architectural responsibility.
+            matter, and I'm currently looking to grow into a role with more technical leadership
+            and broader architectural responsibility.
           </p>
           <ul class="highlights">
             <li>Mentors junior developers and fosters team growth</li>
@@ -140,7 +150,63 @@
       </div>
     </section>
 
-    <section id="skills" class="section">
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Quality Check Platform</h3>
+            <p>Built an internal platform for managing and performing quality checks, integrated with the company's hour-logging system to automatically align task IDs across both tools.</p>
+            <p class="project-impact">Removed manual cross-referencing between QC records and logged hours.</p>
+            <div class="tech-tags">
+              <span>React</span><span>Node.js</span><span>REST API</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3>Internal Innovation Hub</h3>
+            <p>Helped build and maintain an internal platform hosting the company's apps, tools, and automations: a central home for innovation initiatives across the organization.</p>
+            <p class="project-impact">Gave scattered internal tools a shared, discoverable home.</p>
+            <div class="tech-tags">
+              <span>React</span><span>Node.js</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3>SharePoint ⇄ Local Drive Sync</h3>
+            <p>Set up automated file-transfer configuration between SharePoint and local drives/work-planning boards, so engineers no longer had to manually move files or update boards by hand. First use of the SharePoint API (with Microsoft MSAL) in the company.</p>
+            <p class="project-impact">Eliminated a recurring manual task for the whole engineering team.</p>
+            <div class="tech-tags">
+              <span>SharePoint API</span><span>Microsoft MSAL</span><span>Node.js</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3>Ticket Automation Chrome Extension</h3>
+            <p>Built a Chrome extension with a sidebar UI that speeds up ticket processing, letting engineers update statuses directly from the page, backed by a web-scraping automation running on scheduled cron jobs.</p>
+            <p class="project-impact">Cut the time spent switching tools just to update ticket statuses.</p>
+            <div class="tech-tags">
+              <span>JavaScript</span><span>Chrome Extension API</span><span>Web Scraping</span><span>Cron</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3>AI Photo Sorter</h3>
+            <p>Set up an AI-based photo checker that automatically categorizes images into different categories, helping the team sort through thousands of pictures per work area.</p>
+            <p class="project-impact">Turned a manual sorting job on thousands of images into an automated one.</p>
+            <div class="tech-tags">
+              <span>Python</span><span>Image Recognition</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3>CI/CD &amp; Agile Rollout</h3>
+            <p>Introduced CI/CD pipelines to automate deployment to remote and local servers, and moved the team onto Git with a more Agile/Scrum/Kanban way of working.</p>
+            <p class="project-impact">Faster, more reliable deployments and a more structured team workflow.</p>
+            <div class="tech-tags">
+              <span>GitLab CI</span><span>Azure DevOps</span><span>Git</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
       <div class="container">
         <h2 class="section-title">Skills</h2>
         <div class="skills-grid">
@@ -176,7 +242,7 @@
       </div>
     </section>
 
-    <section id="contact" class="section section-alt">
+    <section id="contact" class="section">
       <div class="container contact-inner">
         <h2 class="section-title">Get in touch</h2>
         <p class="contact-text">Interested in working together or just want to say hi? Reach out.</p>
