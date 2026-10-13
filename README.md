@@ -9,6 +9,7 @@ Personal portfolio website, built with plain HTML, CSS, and JavaScript, hosted o
 - `assets/js/script.js`: nav toggle & small interactions
 - `assets/cv/Kalle-Raatgever-CV.pdf`: downloadable CV
 - `assets/img/profile.jpg`: profile photo
+- `assets/demos/`: screenshots and short clips of Stormrz and cotage for the Apps section, recorded locally with sample data
 
 ## Development
 

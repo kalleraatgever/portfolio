@@ -19,6 +19,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#apps">Apps</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -146,7 +147,150 @@
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="apps" class="section">
+      <div class="container">
+        <h2 class="section-title">Apps I built</h2>
+        <p class="section-intro">
+          Two products I designed and built on my own, from first idea to deployment. The code is private, so
+          here is how they look in use. Everything shown is sample data.
+        </p>
+
+        <article class="showcase">
+          <div class="showcase-text">
+            <p class="eyebrow">Live brainstorm sessions</p>
+            <h3>Stormrz</h3>
+            <p>
+              From brainstorm to roadmap. A group joins from their phones by scanning a QR code, no account needed.
+              Every idea strikes the big screen as a storm cloud, and then everyone votes on the best ones.
+            </p>
+            <ul class="showcase-points">
+              <li>Real-time sync between the big screen, a host panel and every phone, over WebSockets</li>
+              <li>Identical ideas merge into one bigger cloud, so popular themes stand out on their own</li>
+              <li>Four ways to vote: one vote, pick several, rank a top N or divide points, revealed on a 1-2-3 trophy stand</li>
+              <li>Presenter mode, co-host links, CSV and JSON export, and reusable session templates</li>
+            </ul>
+            <div class="tech-tags">
+              <span>Node.js</span><span>Express</span><span>Socket.IO</span><span>JavaScript</span><span>Docker</span><span>GitHub Actions</span>
+            </div>
+          </div>
+          <figure class="showcase-media">
+            <div class="browser-frame">
+              <div class="browser-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+              <video class="demo-video" src="assets/demos/stormrz/ideas.mp4" poster="assets/demos/stormrz/ideas-poster.webp"
+                muted loop playsinline preload="none" width="1280" height="720"
+                aria-label="Ideas arriving on the big screen as storm clouds"></video>
+            </div>
+            <figcaption>Ideas from ten phones arriving on the big screen</figcaption>
+          </figure>
+          <div class="gallery" aria-label="Stormrz screenshots">
+            <button class="gallery-item" type="button" data-video="assets/demos/stormrz/podium.mp4"
+              data-full="assets/demos/stormrz/podium-poster.webp" data-caption="Results revealed on the trophy stand">
+              <img src="assets/demos/stormrz/podium-poster.webp" width="1280" height="720" alt="Results on a 1-2-3 trophy stand" loading="lazy" />
+              <span class="play-badge" aria-hidden="true"></span>
+            </button>
+            <button class="gallery-item" type="button" data-full="assets/demos/stormrz/host.webp"
+              data-caption="The host panel: run the session, merge or hide ideas, move on to the vote">
+              <img src="assets/demos/stormrz/host.webp" width="2160" height="1350" alt="Host panel next to the live storm" loading="lazy" />
+            </button>
+            <button class="gallery-item" type="button" data-full="assets/demos/stormrz/phone-ideas.webp"
+              data-caption="On a phone: add ideas and see everyone else's">
+              <img src="assets/demos/stormrz/phone-ideas.webp" width="1170" height="2532" alt="Adding ideas on a phone" loading="lazy" />
+            </button>
+            <button class="gallery-item" type="button" data-full="assets/demos/stormrz/phone-vote.webp"
+              data-caption="On a phone: pick your favourites">
+              <img src="assets/demos/stormrz/phone-vote.webp" width="1170" height="2532" alt="Voting on a phone" loading="lazy" />
+            </button>
+            <button class="gallery-item" type="button" data-full="assets/demos/stormrz/results.webp"
+              data-caption="Final results on the big screen">
+              <img src="assets/demos/stormrz/results.webp" width="1600" height="900" alt="Final results with vote counts" loading="lazy" />
+            </button>
+            <button class="gallery-item" type="button" data-full="assets/demos/stormrz/phone-results.webp"
+              data-caption="Everyone sees the ranking on their own phone">
+              <img src="assets/demos/stormrz/phone-results.webp" width="1170" height="2532" alt="Results on a phone" loading="lazy" />
+            </button>
+          </div>
+        </article>
+
+        <article class="showcase showcase-reverse">
+          <div class="showcase-text">
+            <p class="eyebrow">Group trip app</p>
+            <h3>cotage</h3>
+            <p>
+              Everything a group needs on a trip, in one installable app: who paid what, what's planned and who's
+              winning. Built mobile first as a progressive web app, with live updates and phone notifications.
+            </p>
+            <ul class="showcase-points">
+              <li>Expenses in any currency, split equally, by parts, percentages or amounts, with a settle-up plan</li>
+              <li>Group and personal chat with photos, GIFs and stickers, delivered live</li>
+              <li>A shared calendar for flights, plans and outings, with invitees and locations</li>
+              <li>Games: a drinks leaderboard, bets, knockout tournaments, house-rules scoring and votes</li>
+            </ul>
+            <div class="tech-tags">
+              <span>React</span><span>TypeScript</span><span>Tailwind CSS</span><span>Node.js</span><span>PostgreSQL</span><span>Server-Sent Events</span><span>Web Push</span><span>Vitest</span><span>GitHub Actions</span>
+            </div>
+          </div>
+          <figure class="showcase-media">
+            <div class="phones">
+              <div class="phone-frame">
+                <video class="demo-video" src="assets/demos/cotage/tour.mp4" poster="assets/demos/cotage/trip.webp"
+                  muted loop playsinline preload="none" width="720" height="1558"
+                  aria-label="Walking through a trip: games, drinks leaderboard and the calendar"></video>
+              </div>
+              <div class="phone-frame">
+                <video class="demo-video" src="assets/demos/cotage/chat.mp4" poster="assets/demos/cotage/chat.webp"
+                  muted loop playsinline preload="none" width="720" height="1558"
+                  aria-label="Group chat with messages arriving live"></video>
+              </div>
+            </div>
+            <figcaption>A trip walkthrough, and the group chat updating live</figcaption>
+          </figure>
+          <div class="gallery" aria-label="cotage screenshots">
+            <button class="gallery-item" type="button" data-full="assets/demos/cotage/trip.webp"
+              data-caption="The trip home: chat, planning, games and the group">
+              <img src="assets/demos/cotage/trip.webp" width="1170" height="2532" alt="Trip home screen" loading="lazy" />
+            </button>
+            <button class="gallery-item" type="button" data-full="assets/demos/cotage/expenses.webp"
+              data-caption="Expenses: what everyone paid and what you owe">
+              <img src="assets/demos/cotage/expenses.webp" width="1170" height="2532" alt="Expenses list with balances" loading="lazy" />
+            </button>
+            <button class="gallery-item" type="button" data-full="assets/demos/cotage/calendar.webp"
+              data-caption="The trip calendar, with the trip dates highlighted">
+              <img src="assets/demos/cotage/calendar.webp" width="1170" height="2532" alt="Month calendar with events" loading="lazy" />
+            </button>
+            <button class="gallery-item" type="button" data-full="assets/demos/cotage/games.webp"
+              data-caption="Games and competition, with what's live right now">
+              <img src="assets/demos/cotage/games.webp" width="1170" height="2532" alt="Games section" loading="lazy" />
+            </button>
+            <button class="gallery-item" type="button" data-full="assets/demos/cotage/drinks.webp"
+              data-caption="Drinks: log a round, tonight's leaderboard">
+              <img src="assets/demos/cotage/drinks.webp" width="1170" height="2532" alt="Drinks counter and leaderboard" loading="lazy" />
+            </button>
+            <button class="gallery-item" type="button" data-full="assets/demos/cotage/bets.webp"
+              data-caption="Bets between friends, settled straight into the balances">
+              <img src="assets/demos/cotage/bets.webp" width="1170" height="2532" alt="Open bet with stakes" loading="lazy" />
+            </button>
+            <button class="gallery-item" type="button" data-full="assets/demos/cotage/desktop.webp"
+              data-caption="The same app on a laptop">
+              <img src="assets/demos/cotage/desktop.webp" width="2160" height="1350" alt="Trip home on desktop" loading="lazy" />
+            </button>
+          </div>
+        </article>
+
+        <p class="showcase-note">Private repositories. Happy to give a live walkthrough or go through the code together.</p>
+      </div>
+    </section>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Screenshot viewer">
+      <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+      <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous">&lsaquo;</button>
+      <figure class="lightbox-figure">
+        <div class="lightbox-media"></div>
+        <figcaption class="lightbox-caption"></figcaption>
+      </figure>
+      <button class="lightbox-nav lightbox-next" type="button" aria-label="Next">&rsaquo;</button>
+    </dialog>
+
+    <section id="projects" class="section section-alt">
       <div class="container">
         <h2 class="section-title">Projects</h2>
         <div class="projects-grid">
@@ -202,7 +346,7 @@
       </div>
     </section>
 
-    <section id="skills" class="section section-alt">
+    <section id="skills" class="section">
       <div class="container">
         <h2 class="section-title">Skills</h2>
         <div class="skills-grid">
@@ -238,7 +382,7 @@
       </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="contact" class="section section-alt">
       <div class="container contact-inner">
         <h2 class="section-title">Get in touch</h2>
         <p class="contact-text">Interested in working together or just want to say hi? Reach out.</p>
